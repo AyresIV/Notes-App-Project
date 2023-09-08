@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="Notes.css">
+</head>
+<body>
+    <div id="header" class="header">
+     
+        <img src="title.png" alt="Your Image" id="headerImage" class="header-image">
+    </div>
+    <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Enter a task" class="input-field">
+        <input type="date" id="taskDate" class="input-field">
+        <input type="time" id="taskTime" class="input-field">
+        <button id="addTaskButton" class="button">Add Task</button>
+        <!-- Add Clear Inputs button -->
+        <button id="clearInputsButton" class="button clear-button">Clear</button>
+    </div>
+    <div id="taskList" class="task-list"></div>
+    <script src="Notes.js"></script>
+</body>
+</html>
