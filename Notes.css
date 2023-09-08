@@ -13,7 +13,31 @@ body {
     flex-wrap: wrap; /* Allow tasks to wrap to the next row */
     flex-direction: row; /* Make task notes align from left to right */
 }
+.date-time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: -30px;
+    margin-left: -20px;
+}
 
+.date,
+.time {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 5px 0;
+    margin-top: 1px;
+
+}
+
+.date {
+    font-weight: bold;
+}
+
+.task .date-time-container {
+    margin-top: 10px;
+}
 .task { 
     width: 250px;
     height: 150px;
@@ -27,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative; /* Add this property back for button positioning */
+    position: relative;
 }
 
 .completed {
@@ -46,8 +70,14 @@ body {
 
 .task .task-content {
     flex-grow: 1; /* Allow the content to grow and take available space */
-    padding-right: 10px; /* Add right padding for text */
-    padding-left: 10px; /* Add left padding for text */
+    padding-right: 50px;
+        /* Reduce right padding to move content to the left */
+        padding-left: 20px;
+        /* Add left padding for text */
+        padding-top: 20px;
+        /* Add top margin to push it down */
+        padding-bottom: 30px;
+        /* Add bottom padding to create space at the bottom */
     text-align: center; /* Center-align text */
 }
 

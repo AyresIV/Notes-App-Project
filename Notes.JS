@@ -28,7 +28,10 @@ function addTask() {
             <input type="checkbox" onchange="toggleTaskComplete(this)">
             <span>${taskText}</span>
         </div>
-        <span>${taskDateTime}</span>
+        <div class="date-time-container">
+            <div class="date">${taskDateString}</div>
+            <div class="time">${taskTimeString}</div>
+        </div>
         <span class="delete-button" onclick="removeTask(this)">X</span>
     `;
 
@@ -100,7 +103,10 @@ function loadTasks() {
                 <input type="checkbox" onchange="toggleTaskComplete(this)" ${taskData.completed ? 'checked' : ''}>
                 <span class="${taskData.completed ? 'completed' : ''}">${taskData.text}</span>
             </div>
-            <span>${taskData.datetime}</span>
+            <div class="date-time-container">
+                <div class="date">${taskData.datetime.split(',')[0]}</div>
+                <div class="time">${taskData.datetime.split(',')[1]}</div>
+            </div>
             <span class="delete-button" onclick="removeTask(this)">X</span>
         `;
 
