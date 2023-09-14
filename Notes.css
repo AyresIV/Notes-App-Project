@@ -3,15 +3,15 @@ body {
     margin: 0;
     background-color: #f3f3f3;
     background-image: url(tile.jpg);
-    background-repeat: repeat; /* If you want the background image to repeat */
-    background-size: auto; /* If you want the background image to maintain its original size */
-    padding: 20px; /* Add some padding to the body */
+    background-repeat: repeat;
+        background-size: auto;
+        padding: 20px;
 }
 
 .task-list {
     display: flex;
-    flex-wrap: wrap; /* Allow tasks to wrap to the next row */
-    flex-direction: row; /* Make task notes align from left to right */
+    flex-wrap: wrap;
+        flex-direction: row;
 }
 .date-time-container {
     display: flex;
@@ -41,10 +41,10 @@ body {
 .task { 
     width: 250px;
     height: 150px;
-    background-image: url('notebg.png'); /* Replace 'notebg.png' with the path to your notebook image */
+    background-image: url('notebg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 40px; /* Adjust padding to create space for the content inside the note */
+    padding: 40px;
     margin: 10px;
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
@@ -59,9 +59,9 @@ body {
 }
 
 .task .delete-button {
-    position: absolute; /* Position the delete button absolutely within the .task element */
-    top: 20px; /* Adjust bottom position as needed */
-    right: 33px; /* Adjust right position as needed */
+    position: absolute;
+        top: 20px;
+        right: 33px;
     color: #ff0000;
     cursor: pointer;
     font-size: 24px;
@@ -69,16 +69,12 @@ body {
 }
 
 .task .task-content {
-    flex-grow: 1; /* Allow the content to grow and take available space */
+    flex-grow: 1;
     padding-right: 50px;
-        /* Reduce right padding to move content to the left */
         padding-left: 20px;
-        /* Add left padding for text */
         padding-top: 20px;
-        /* Add top margin to push it down */
         padding-bottom: 30px;
-        /* Add bottom padding to create space at the bottom */
-    text-align: center; /* Center-align text */
+    text-align: center;
 }
 
 .task .checkbox-wrapper {
@@ -91,20 +87,15 @@ body {
     margin-right: 5px;
 }
 
-
-/* Modifications for the single background for inputs and larger size */
-
 .input-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Move input container content to the left */
+    align-items: flex-start;
     margin: 20px;
     padding: 20px;
     background-image: url('formbg.jpg');
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    width: 500px; /* Increase the width to make the container larger */
-    text-align: left; /* Align text to the left */
+    width: 500px;
+        text-align: left;
 }
 
 .input-field {
@@ -112,13 +103,13 @@ body {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 10px;
-    border: none; /* Remove the border */
-    background-color: transparent; /* Make the background transparent */
+    border: none;
+        background-color: transparent;
 }
 
 .button {
-    font-size: 20px; /* Increase font size for buttons */
-    padding: 10px 20px; /* Increase padding for buttons */
+    font-size: 20px;
+        padding: 10px 20px;
     cursor: pointer;
     background-color: #007bff;
     color: #fff;
@@ -128,7 +119,7 @@ body {
 }
 
 .button.clear-button {
-    margin-top: 10px; /* Add margin to Clear button */
+    margin-top: 10px;
 }
 
 .button:hover {
@@ -138,14 +129,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 306px; /* Set the desired width for the header */
-    height: 100px; /* Set the desired height for the header */
-    background-image: url('title.png'); /* Replace 'YourImage.png' with the path to your PNG image */
+    width: 306px;
+        height: 100px;
+        background-image: url('title.png');
     background-size: contain;
     background-position: right center; 
     background-repeat: no-repeat; 
 }
 
 .header-image {
-    display: none; /* Hide the image tag, as the background image is being used */
+    display: none;
 }

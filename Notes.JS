@@ -35,7 +35,7 @@ function addTask() {
         <span class="delete-button" onclick="removeTask(this)">X</span>
     `;
 
-    // Insert the new task at the end of the task list
+  
     taskList.appendChild(task);
 
     setTimeout(() => {
@@ -85,7 +85,7 @@ function clearInputs() {
     taskTime.value = "";
 }
 
-// Add Clear Inputs button event listener
+//Clear Inputs button 
 document.getElementById("clearInputsButton").addEventListener("click", clearInputs);
 
 // Load tasks from local storage
@@ -110,7 +110,7 @@ function loadTasks() {
             <span class="delete-button" onclick="removeTask(this)">X</span>
         `;
 
-        // Insert the loaded task at the end of the task list
+    
         taskList.appendChild(task);
 
         setTimeout(() => {
@@ -122,5 +122,5 @@ function loadTasks() {
 // Load tasks when the page loads
 loadTasks();
 
-// Add task button event listener
+//Task button event listener
 document.getElementById("addTaskButton").addEventListener("click", addTask);
