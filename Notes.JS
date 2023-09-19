@@ -9,7 +9,11 @@ function addTask() {
     const taskDateString = taskDate.value;
     const taskTimeString = taskTime.value;
 
-    if (taskText === "") return;
+    // Check if any of the required fields are empty
+    if (taskText === "" || taskDateString === "" || taskTimeString === "") {
+        alert("Please fill in all the required fields (Task, Date, and Time).");
+        return;
+    }
 
     const task = document.createElement("div");
     task.classList.add("task");
@@ -35,7 +39,6 @@ function addTask() {
         <span class="delete-button" onclick="removeTask(this)">X</span>
     `;
 
-  
     taskList.appendChild(task);
 
     setTimeout(() => {
@@ -85,7 +88,7 @@ function clearInputs() {
     taskTime.value = "";
 }
 
-//Clear Inputs button 
+// Clear Inputs button 
 document.getElementById("clearInputsButton").addEventListener("click", clearInputs);
 
 // Load tasks from local storage
@@ -110,7 +113,6 @@ function loadTasks() {
             <span class="delete-button" onclick="removeTask(this)">X</span>
         `;
 
-    
         taskList.appendChild(task);
 
         setTimeout(() => {
@@ -122,5 +124,5 @@ function loadTasks() {
 // Load tasks when the page loads
 loadTasks();
 
-//Task button event listener
+// Task button event listener
 document.getElementById("addTaskButton").addEventListener("click", addTask);
