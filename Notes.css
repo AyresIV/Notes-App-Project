@@ -72,12 +72,12 @@ body {
     cursor: pointer;
     font-size: 24px;
     padding: 10px 10px;
-    opacity: 0; /* Initially hide the delete button */
-    transition: opacity 0.2s ease; /* Add a transition for a smooth effect */
+    opacity: 0; 
+    transition: opacity 0.2s ease; 
 }
 
 .task:hover .delete-button {
-    opacity: 1; /* Show the delete button on hover */
+    opacity: 1; 
 }
 
 .task .task-content {
@@ -87,11 +87,11 @@ body {
     padding-top: 20px;
     padding-bottom: 30px;
     text-align: center;
-    min-height: 150px; /* Set a minimum height for the content area */
-    max-height: 200px; /* Set a maximum height for the content area */
-    max-width: 300px; /* Set a maximum width for the content area */
-    overflow: auto; /* Enable both vertical and horizontal scrolling if content exceeds limits */
-    word-wrap: break-word; /* Control text wrapping to prevent overflow */
+    min-height: 150px; 
+    max-height: 200px; 
+    max-width: 300px; 
+    overflow: auto; 
+    word-wrap: break-word; 
 }
 
 .task .checkbox-wrapper {

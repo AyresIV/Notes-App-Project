@@ -9,7 +9,7 @@ function addTask() {
     const taskDateString = taskDate.value;
     const taskTimeString = taskTime.value;
 
-    // Check if any of the required fields are empty
+   
     if (taskText === "" || taskDateString === "" || taskTimeString === "") {
         alert("Please fill in all the required fields (Task, Date, and Time).");
         return;
